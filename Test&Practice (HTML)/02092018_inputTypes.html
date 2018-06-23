@@ -1,0 +1,54 @@
+<!-- 
+Tam Tran
+February 9, 2018
+Lab 5, Input Types
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<style>
+		input {
+			margin: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	Full name <input type="text" id="name"> <br>
+	School? 
+	<select name="usState" id="state">
+		<option value="Select">-Select-</option>
+		<option value="Alabama">Alabama</option>
+		<option value="Alaska">Alaska</option>
+		<option value="Arizona">Arizona</option>
+		<option value="Arkansas">Arkansas</option>
+		<option value="California">California</option>
+		<option value="Colorado">Colorado</option>
+		<option value="Connecticut">Connecticut</option>
+		<option value="Delaware">Delaware</option>
+		<option value="DC">District Of Columbia</option>
+		<option value="Florida">Florida</option>
+		<option value="Georgia">Georgia</option>
+		<option value="Hawaii">Hawaii</option>
+		<option value="Idaho">Idaho</option>
+	</select><br>
+	Select Date <input type="date" id="date"><br>
+	Quantity? (1..100) <input type="number" id="quantity" min="1" max="100"><br>
+	<button onclick="seeInput()">See Input</button>	
+	<div id="toChange"></div>
+	
+	<script>
+		function seeInput() {
+			var tempStr = "";
+			tempStr += "Name: " + document.getElementById("name").value + "<br>"; 
+			tempStr += "University: " + document.getElementById("state").value + "<br>";
+			tempStr += "Date: " + document.getElementById("date").value + "<br>";
+			tempStr += "Quantity: " + document.getElementById("quantity").value + "<br>";
+			document.getElementById("toChange").innerHTML = tempStr;
+		}
+	</script>
+</body>
+</html>
