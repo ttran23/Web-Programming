@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+	Tam Tran
+	Friday Lab
+	 -->
+	<meta charset="utf-8">
+	<title>Urban Dictionary Lookup</title>
+</head>
+
+<body>
+	<h1>Urban Dictionary Lookup</h1>
+	<p>
+	Enter a term
+	<input type="text" id="dictionary" onchange="getDef()">	
+	Choices limited to 'c', 'cpp', 'java', 'python', 'ruby'
+	</p>
+	<div id="toChange"></div>
+	
+	<script>
+		function getDef() {
+			var word = document.getElementById("dictionary").value;
+			document.getElementById("dictionary").value = "";
+			var ajax = new XMLHttpRequest();
+			ajax.open("GET", "urban.php?word=" + word, true);
+			ajax.send();
+			
+			ajax.onreadystatechange = function() {
+				console.log("State: " + ajax.readyState);
+				if (ajax.readyState == 4 && ajax.status == 200) {
+				document.getElementById("toChange").innerHTML = ajax.responseText;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

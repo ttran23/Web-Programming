@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 
+Tam Tran
+Project 9 - MVC Search
+-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Movies</title>
+</head>
+<body>
+	<h3>Search for either all roles or all actors in the database imdb_small</h3><hr>
+	<p>Enter String</p>
+	<input type="text" name="inputSub" id="inputSub"><br>
+	<p>
+		<input type="button" name="inputSub" id="Actors" value="Actors" onclick="getActors()">
+		<input type="button" name="inputSub" id="Roles" value="Roles" onclick="getRoles()">
+	</p>
+	<br><hr>
+	<div id="toChange"></div>
+	
+	<script>
+	// Return all actors matching substring
+	function getActors() {;
+		var ajax = new XMLHttpRequest();
+		var str = document.getElementById("inputSub").value;
+		ajax.open("GET", "controller.php?actor=" + str, true);
+		ajax.send();
+		
+		ajax.onreadystatechange = function () {
+	    	if (ajax.readyState == 4 && ajax.status == 200) { 
+	    		var divToChange = document.getElementById("toChange");
+		        var array = JSON.parse(ajax.responseText);
+		
+		        var name = "";
+		        for (var i = 0; i < array.length; i++) {
+		        	name += array[i]['first_name'] + " " + array[i]['last_name'] + "<br>";
+		        }
+		        if (str === "") {
+			        divToChange.innerHTML = "";
+		        }
+		        else {
+			        divToChange.innerHTML = name;
+		        }
+		    }
+		}
+	}
+	
+	// Return all roles matching substring
+	function getRoles() {
+		var ajax = new XMLHttpRequest();
+		var str = document.getElementById("inputSub").value;
+		ajax.open("GET", "controller.php?role=" + str, true);
+		ajax.send();
+		
+		ajax.onreadystatechange = function () {
+	    	if (ajax.readyState == 4 && ajax.status == 200) { 
+	    		var divToChange = document.getElementById("toChange");
+		        var array = JSON.parse(ajax.responseText);
+
+		        var role = "";
+		        for (var i = 0; i < array.length; i++) {
+		        	role += array[i]['role'] + "<br>";
+		        }
+		        if (str === "") {
+			        divToChange.innerHTML = "";
+		        }
+		        else {
+			        divToChange.innerHTML = role;
+		        }
+		    }
+		}
+	}
+	</script>
+</body>
+</html>

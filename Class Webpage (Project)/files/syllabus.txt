@@ -1,0 +1,85 @@
+COURSE DESCRIPTION: Circuit variables, circuit elements, simple resistive circuits, techniques of circuit analysis, operational amplifiers, inductors and capacitors, mutual inductance, response of RL and RC circuits, response of RLC circuits, sinusoidal steady-state analysis, transformers.
+PREREQUISITE TOPICS:
+
+1. Calculus and differential equations.
+2. Physics of electricity and magnetism (PHYS 241).
+
+TEXT:
+
+NILSSON & REIDEL, Electric Circuits, 10th Edition
+ISBN:      1269750526
+Publisher: Pearson Learning Solutions
+Format: Kit/Package
+
+The UofA Bookstore has this as a kit/package that includes a license for Mastering Engineering, together with a softbound hardcopy of the book. If you prefer to explore other options, you must purchase a license for Mastering Engineering. This license includes an online electronic copy of the book. The softbound hardcopy of the book is optional.
+
+PHONES: Mobile phones must remain turned off and put away during class. The same applies for laptops and tablets. 
+
+HOMEWORK: Homework will be assigned and graded. See the Assignments page on the course website.
+
+LABORATORY: One week before each lab you will complete a Prelab assignment, including exercises using the circuit simulation software PSpice. During each lab, you will build electronic circuits and take measurement data. A written Lab report is then required. You must complete the prelab before you will be allowed to attempt the lab experiments. You must complete all Prelab assignments and all Lab reports to receive any lab credit for the course. The Prelab and Lab assignments can be found on the Assignments page of the course website.
+
+EXAMINATIONS: There will be four midterm examinations and a comprehensive final exam. Exam dates, topics, and rules are posted on the Exams page of the course website. 
+GRADING: See the Grades page on the course website.
+ACADEMIC INTEGRITY: The Code of Academic Integrity (on the web at http://deanofstudents.arizona.edu/academicintegrity) is based on the guiding principle that a student's submitted work must be the student's own. In ECE 220, this policy will be applied to all work submitted for a grade, including exams, quizzes, homework, prelabs and lab assignments. Copying previously posted solutions or solution manuals is strictly forbidden. All work must be original. Sharing all or parts of PSpice programs and lab data/reports is strictly forbidden.
+
+STUDY GROUPS: Discussing homework assignments in study groups can often be an aid to learning. However, as stated above, all work submitted for a grade must be the student's own. Students are encouraged to work through practice exams on their own, for obvious reasons.
+
+WITHDRAWALS: Please check the UofA webpages for the deadline to drop the class without the permission of the instructor. If you drop by this date, no record will appear on your transcripts. After that, there is a second date up until you may withdraw from the class with a grade of W or E. The grade of W will be given freely until the Thursday following the first exam. After that, the grade of W will be given only if you are passing the course at the time. Note that students wishing to drop the course AT ANY TIME must take appropriate action. Ceasing attendance does not automatically drop you from the course. IF YOU ARE STILL ON THE CLASS ROLL AT THE END OF THE SEMESTER, YOU WILL RECEIVE 0'S FOR ANY WORK NOT COMPLETED AND WILL BE GRADED ACCORDINGLY.
+
+ACCESSIBILITY AND ACCOMMODATIONS: It is the University's goal that learning experiences be as accessible as possible. If you anticipate or experience physical or academic barriers based on disability or pregnancy, please let me know immediately so that we can discuss options. You are also welcome to contact Disability Resources (520-621-3268) to establish reasonable accommodations. Please be aware that the accessible table and chairs in this room should remain available for students who find that standard classroom seating is not usable.
+
+THREATENING BEHAVIOR: The University has adopted the following policy on threatening behavior: http://policy.arizona.edu/education-and-student-affairs/threatening-behavior-students.
+
+NONDISCRIMINATION AND ANTI-HARASSMENT: The University has adopted the following policy on Nondiscrimination and anti-harassment policy: http://policy.arizona.edu/human-resources/nondiscrimination-and-anti-harassment-policy.
+
+COURSE TOPICS: The numbers in parentheses indicate approximate number of lectures devoted to the topics listed.
+
+Chapter 1 - Circuit Variables (2)
+Overview of electrical engineering and circuit analysis, voltage and current, the ideal basic circuit element, reference directions, power and energy.
+
+Chapter 2 - Circuit Elements (3)
+Voltage and current sources, electrical resistance and Ohm's law, construction of a circuit model, Kirchhoff's laws, and dependent sources.
+
+Chapter 3 - Simple Resistive Circuits (4)
+Resistors in series and in parallel, the voltage-divider circuit, the current-divider circuit, measuring voltage and current, the Wheatstone bridge, Delta-Wye equivalent circuits.
+
+Mid-Term Exam 1
+
+Chapter 4 - Techniques of Circuit Analysis (13)
+Introduction to the node-voltage method, node-voltage analysis with dependent sources, some special cases; introduction to mesh currents, mesh current analysis with dependent sources, some special cases; the node-voltage method versus the mesh current method; source transformations, Thevenin and Norton equivalent circuits; maximum power transfer; superposition.
+
+Mid-Term Exam 2 (may include one question on Chap. 4 techniques applied to AC circuits)
+
+Chapter 5 - The Operational Amplifier (8)
+Operational amplifier terminals; terminal voltages and currents; inverting, summing, non-inverting, difference, comparators and integrating amplifier circuits.
+
+Chapter 6 - Inductance, Capacitance, Mutual Inductance (4)
+Properties of the inductor, properties of the capacitor, series and parallel combinations of inductance and capacitance, mutual inductance.
+
+Mid-Term Exam 3
+
+Chapter 7 - Response of First-Order RL and RC Circuits (6)
+Natural response of RL and RC circuits, step response of RL and RC circuits, a general solution for step and natural responses, sequential switching, unbounded response.
+
+Chapter 8 - Natural and Step Responses of RLC Circuits (6)
+Natural and step responses of a parallel RLC circuit, natural and step responses of a series RLC circuit.
+
+Mid-Term Exam 4 (may include one question on Chap. 4 techniques applied to AC circuits)
+
+Chapter 9 - Sinusoidal Steady-State Analysis (10)
+Sinusoidal sources and response, phasors, impedance and admittance, series-parallel and Delta-Wye simplifications, source transformations and Thevenin-Norton equivalents, node and mesh analysis, transfer functions, ideal transformers, impedance matching, phasor diagrams.
+
+Final Exam (Comprehensive, but weighted more towards Chapter 9.)
+
+COURSE OBJECTIVES: ECE 220 is the first circuits course required by all electrical and computer engineering majors. The course introduces the fundamentals of DC and AC circuits, and directly addresses the first of four ECE Educational Objectives, namely: to provide a first-rate education in the principles of analog circuits... (with) the use of hardware and software tools.
+
+In addition, the ECE Department expects graduates to have mastered a number of types of skills, called ABET EC-2000 Outcomes. ECE 220 contributes towards the following skills or outcomes:
+
+Outcome A - An ability to apply knowledge of mathematics, science and engineering
+Outcome B - An ability to (design and) conduct experiments, as well as to analyze and interpret data
+Outcome E - An ability to identify, formulate, and solve engineering problems
+Outcome G - An ability to communicate effectively (in writing)
+Outcome K - An ability to use the techniques, skills, and modern engineering tools necessary for engineering practice
+
+Class sessions, discussion sessions, and weekly homework assignments are employed to achieve A, E and K. Outcomes B and G are addressed by laboratory assignments. 

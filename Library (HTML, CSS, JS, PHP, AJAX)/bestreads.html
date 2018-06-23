@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<!-- CSC 337: Project Best Reads -->
+<!-- Tam Tran -->
+<head>
+	<link rel="stylesheet" type="text/css" href="bestreads.css" />
+	<title>Best Reads</title>
+</head>
+<body>
+<body onload="showAll()">
+	
+	<div id="header">
+		<div>
+			best<span>reads</span>
+		</div>
+		<span id="back" onclick="showAll()">home</span>
+	</div>
+	
+	<div id="allImages"></div>
+	
+	<script>
+	function showAll() {
+	  	// Use AJAX to get an array of image urls.
+	  	var ajax = new XMLHttpRequest();
+		ajax.open("GET", "bestreads.php?book=all", true);
+		ajax.send();
+		
+		ajax.onreadystatechange = function() {
+			if (ajax.readyState == 4 && ajax.status == 200) {
+			  	var arr = JSON.parse(ajax.responseText);
+			  	document.getElementById("allImages").innerHTML = "";
+			  	for (var i = 0; i < arr.length; i++) {
+			  		document.getElementById("allImages").innerHTML += ""
+			  		+ "<div class=\"onebook\">"
+			  		+ "<img src=\"" + arr[i] + "/cover.jpg\" onclick=\"showBook('" + arr[i] + "')\""
+			  		+ "</div>";
+			  	}
+			}
+		}
+	}
+	
+	function showBook(book) {
+		// Get Book Name
+		var bookname = book.split("/")[2];
+		
+		// Use AJAX to get an image url.
+		var ajax = new XMLHttpRequest();
+		ajax.open("GET", "bestreads.php?book=" + bookname, true);
+		ajax.send();
+		
+		ajax.onreadystatechange = function() {
+			if (ajax.readyState == 4 && ajax.status == 200) {
+				var item = JSON.parse(ajax.responseText);
+				// The project page says it has to return an HTML
+				// So all of the divs/img/etc is in the .php file
+				document.getElementById("allImages").innerHTML = item;
+			}
+		}
+	}
+	</script>
+</body>
+</html>
