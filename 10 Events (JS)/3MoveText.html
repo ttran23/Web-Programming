@@ -1,0 +1,31 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Move Text</title>
+	<style>
+		body {
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<input id="leftInput">
+	<button onclick="moveValue()">>> Move left to right >></button>
+	<input id="rightInput">
+	
+	<script>
+		function moveValue() {
+			var temp = document.getElementById("leftInput").value;
+			document.getElementById("rightInput").value = temp;
+			document.getElementById("leftInput").value = "";
+		}
+	</script>
+</body>
+</html>

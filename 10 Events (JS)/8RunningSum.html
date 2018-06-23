@@ -1,0 +1,45 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Running Sum</title>
+	<style>
+		body {
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	Enter a number:
+	<input id="sumVal" onkeypress="if (event.keyCode == 13) runningSum()" type=number>
+	<br><br>
+	<div id="toChange">sum of [] = 0</div>
+	
+	<script>
+		var digitsInput = [];
+		function runningSum() {
+			if (document.getElementById("sumVal").value != "") { // Prevents empty strings
+				digitsInput.push(document.getElementById("sumVal").value);
+			}
+			document.getElementById("sumVal").value = "";
+			var tempStr = "sum of [";
+			var sum = 0;
+			for (var i = 0; i < digitsInput.length; i++) {
+				sum += Number(digitsInput[i]);
+				tempStr += digitsInput[i];
+				if (i != digitsInput.length - 1) {
+					tempStr += ",";
+				}
+			}
+			tempStr += "] = " + sum;
+			document.getElementById("toChange").innerHTML = tempStr;
+		}
+	</script>
+</body>
+</html>

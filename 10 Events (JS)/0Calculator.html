@@ -1,0 +1,74 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<style>
+		body {
+			margin: 30px;
+		}
+		h4 {
+			font-weight: bold;
+		}
+		p {
+			border-style: solid;
+			border-color: red;
+			border-width: 5px;
+			background-color: black;
+			color: white;
+			float: left;
+			padding: 10px;
+			font-family: courier;
+			font-size: 12pt;
+		}
+		
+		input {
+			margin: 3px;
+			max-width: 80px;
+		}
+		
+		button {
+			border-style: solid;
+			border-color: lightgray;
+			border-radius: 5px;
+			border-width: thin;
+			background-color: white;
+			margin: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<h4> Calculator </h4>
+	x <input type="number" id="xVal"> <br>
+	y <input type="number" id="yVal"> <br>
+	<button onclick="calculateVals()">Show Results</button> <br>
+	<p id="toChange">
+		x + y = addVal<br>
+		x - y = subVal<br>
+		x * y = mulVal<br>
+		x / y = divVal<br>
+		x % y = modVal<br>
+	</p>
+	
+	<script>
+		function calculateVals() {
+			var element = document.getElementById("toChange");
+			var xVal = document.getElementById("xVal").value;
+			var yVal = document.getElementById("yVal").value;
+			
+			element.innerHTML = "";
+			element.innerHTML += xVal + " + " + yVal + " = " + (Number(xVal) + Number(yVal)) + "<br>";
+			element.innerHTML += xVal + " - " + yVal + " = " + (xVal - yVal) + "<br>";
+			element.innerHTML += xVal + " * " + yVal + " = " + (xVal * yVal) + "<br>";
+			element.innerHTML += xVal + " / " + yVal + " = " + (xVal / yVal) + "<br>";
+			element.innerHTML += xVal + " % " + yVal + " = " + (xVal % yVal) + "<br>";
+		}
+	</script>
+</body>
+</html>

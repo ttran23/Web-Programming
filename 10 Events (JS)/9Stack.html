@@ -1,0 +1,54 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Stack</title>
+	<style>
+		body {
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	Push:
+	<input id="pushVal" onkeypress="if (event.keyCode == 13) pushList()" type=number>
+	<button id="popButton" onclick="popList()">Pop</button>
+	<br><br>
+	<div id="toChange"></div>
+	
+	<script>
+		var numList = [];
+		
+		function pushList() {
+			if (document.getElementById("pushVal").value != "") { // Prevents empty strings
+				numList.push(document.getElementById("pushVal").value);
+			}
+			document.getElementById("pushVal").value = "";
+			printList();
+		}
+		
+		function popList() {
+			numList.pop();
+			printList();
+		}
+		
+		function printList() {
+			var tempStr = "<ul>"; // Unordered List
+			
+			for (var i = numList.length - 1; i >= 0; i--) {
+				tempStr += "<li>" + numList[i] + "</li>";	// Each List element
+			}
+			tempStr += "</ul>"; // End unordered List
+			document.getElementById("toChange").innerHTML = tempStr; // Setting innerHTML
+		}
+		
+	</script>
+</body>
+</html>
+

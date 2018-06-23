@@ -1,0 +1,55 @@
+/*
+Tam Tran
+February 16, 2018
+CSC337 SPR2018
+Rick Mercer
+*/
+body {
+	margin: 10px;
+	font-size: 0.9em;
+}
+
+div.bluePage {
+	background-color: lightblue;
+	width: 300px;
+	height: 450px;
+	border: 6px gray outset;
+}
+
+div.pinkPage {
+	background-color: pink;
+	border: 6px red outset;
+	width: 400px;
+	height: 240px;
+	padding: 20px;
+}
+
+p {
+	float: left;
+	text-align: right;
+	width: 100px;
+	margin: 0px 5px 0px 10px;
+}
+
+p.center {
+	margin: 0px 120px;
+}
+
+p.quantityBox {
+	margin: 5px 0px;
+}
+
+input {
+	float: left;
+	margin: 0px;
+}
+
+input.quantityBox {
+	width: 30px;
+	margin: 5px 0px 0px 75px;
+}
+
+fieldset.bluePage {
+	margin: 0px 20px;
+	padding: 10px;
+}

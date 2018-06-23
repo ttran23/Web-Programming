@@ -1,0 +1,44 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Change 7 Styles</title>
+	<style>
+		div.before {
+			/*
+			Empty to show default
+			*/
+		}
+	
+		div.after {
+			background-color: lightgray;
+			border-style: solid;
+			border-width: 5px;
+			border-color: red;
+			color: forestgreen;
+			font-size: 24px;
+			padding: 50px;
+			width: 300px;
+			float: right;
+		}
+	</style>
+</head>
+
+<body>
+	<h3 onclick="changeStyle()">Click this text</h3>
+	<hr>
+	<div id="toChange" class="before">Click "Click this text" above to change this div in several ways</div>
+	
+	<script>
+		function changeStyle() {
+			document.getElementById("toChange").className = "after";
+			document.getElementById("toChange").innerHTML = "Change innerHTML, font 24 px, border 5px, width 300px, float right, padding 50px, background? you guess";
+		}
+	</script>
+</body>
+</html>

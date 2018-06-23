@@ -1,0 +1,44 @@
+/*
+Tam Tran
+February 4, 2018
+Project 4
+*/
+div.header {
+	background-color: blue;
+	text-align: center;
+	font-size: 20pt;
+	color: white;
+	padding: 3px;
+	margin: 0px;
+}
+
+div.footer {
+	background-color: blue;
+	text-align: center;
+	font-size: 14pt;
+	color: white;
+	padding: 3px;
+	margin: 0px;
+}
+
+div.buttonList {
+	background-color: lightgray;
+	float: left;
+	padding: 10px;
+	height: 500px;
+}
+
+button {
+	border-style: solid;
+	border-color: gray;
+	border-radius: 5px;
+	border-width: thin;
+	background-color: white;
+	margin: 10px 0px 10px 0px;
+}
+
+iframe {
+	width: 600px;
+	height: 516px;	
+	border-width: 0px;
+}

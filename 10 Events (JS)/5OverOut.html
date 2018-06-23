@@ -1,0 +1,45 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Over Out</title>
+	<style>
+		div {
+			background-color: pink;
+			border-style: solid;
+			border-width: 3px;
+			border-color: red;
+			margin: 10px;
+			padding: 2px 10px 2px 10px;
+			max-width: 140px;
+			height: 16px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div onmouseover="mouseOver()" onmouseout="mouseOut()">Hover over me</div>
+	
+	<div id="toChange"> </div>
+	
+	<script>
+		var count = 0;
+		function mouseOver() {
+			count++;
+			document.getElementById("toChange").innerHTML =
+				"Entered " + count + " events.";
+		}
+		function mouseOut() {
+			count++;
+			document.getElementById("toChange").innerHTML =
+				"Exited " + count + " events.";
+		}
+	</script>
+</body>
+</html>

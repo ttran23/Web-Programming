@@ -1,0 +1,33 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Growing Image</title>
+	<style>
+		img {
+			float: left;
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	Click the image below to see it grow.<br>
+	<img id="mainImage" alt="Pic of Kitty" src="kitty.jpg" onclick="increaseImage()">
+	
+	<script>
+		var curr = 50;
+		function increaseImage() {
+			curr += 15;
+			document.getElementById("mainImage").style.width = "" + (curr) + "px";
+			document.getElementById("mainImage").style.height = "" + (curr) + "px";
+		}
+	</script>
+</body>
+</html>

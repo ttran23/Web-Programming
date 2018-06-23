@@ -1,0 +1,40 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add To Array</title>
+	<style>
+		body {
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	Enter a name: 
+	<input id="nameVal" onkeypress="if (event.keyCode == 13) addToArray()">
+	<br><br>
+	The names of the array:
+	<br><br>
+	<div id="toChange"></div>
+	
+	<script>
+		var nameArray = [];
+		function addToArray() {
+			nameArray.push(document.getElementById("nameVal").value);
+			document.getElementById("nameVal").value = "";
+			var tempStr = "";
+			for (var i = 0; i < nameArray.length; i++) {
+				 tempStr += (i+1) + ": " + nameArray[i] + "<br>";
+			}
+			document.getElementById("toChange").innerHTML = tempStr;
+		}
+	
+	</script>
+</body>
+</html>

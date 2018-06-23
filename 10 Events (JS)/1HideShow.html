@@ -1,0 +1,49 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hide Show</title>
+	<style>
+		button {
+			border-style: solid;
+			border-color: lightgray;
+			border-radius: 5px;
+			border-width: thin;
+			background-color: white;
+			margin: 10px;
+		}
+		
+		div {
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<button onclick="flip()" id="HideShowButton">Hide</button>
+	
+	<div id="toChange">
+		This text will appear and disappear.
+	</div>
+	
+	<script>
+		function flip() {
+			var currButton = document.getElementById("HideShowButton");
+			var currText = document.getElementById("toChange");
+			if (currButton.innerHTML == "Hide") {
+				currButton.innerHTML = "Show";
+				currText.innerHTML = "";
+			}
+			else {
+				currButton.innerHTML = "Hide";
+				currText.innerHTML = "This text will appear and disappear.";
+			}
+		}
+	</script>
+</body>
+</html>

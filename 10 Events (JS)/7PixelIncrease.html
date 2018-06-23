@@ -1,0 +1,40 @@
+<!-- 
+Tam Tran
+February 4, 2018
+Project 4
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pixel Increase</title>
+	<style>
+		button {
+			border-style: solid;
+			border-color: lightgray;
+			border-radius: 5px;
+			border-width: thin;
+			background-color: white;
+			margin: 10px;
+		}
+		
+		div {
+			font-size: 16px;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<button id="increase" onclick="increaseFont()">Increment by 1px</button>
+	<div id="toChange">Increase my point size by 1px each click.</div>
+	
+	<script>
+		var curr = 16;
+		function increaseFont() {
+			curr++;
+			document.getElementById("toChange").style.fontSize = "" + curr + "px";
+		}
+	</script>
+</body>
+</html>
